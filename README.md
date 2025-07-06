@@ -117,7 +117,7 @@ Here are some previews of BlogNest in action:
 
 Created by **Anowar Hossain**
 GitHub: [Anowar Hossain](https://github.com/AnowarOHossain)
-Message me: [https://msganowar.netlify.app/](https://msganowar.netlify.app/)
+To Message me: [Click Here](https://msganowar.netlify.app/)
 
 
 ## License
