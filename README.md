@@ -61,30 +61,30 @@ This project is free to clone, fork, and use for learning and educational purpos
 ## Project Folder Structure
 
 BlogNest/
-├── blog_project/                  # Main Django project folder
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py                # Project settings including INSTALLED_APPS, TEMPLATES, DATABASES
-│   ├── urls.py                   # Root URL configurations including blog app URLs
-│   └── wsgi.py
-│
-├── blog/                         # Django app for blog functionality
-│   ├── templates/                # HTML templates
-│   │   └── blog/
-│   │       ├── home.html         # Homepage listing posts and categories
-│   │       ├── post_detail.html  # Individual blog post detail
-│   ├── __init__.py
-│   ├── admin.py                  # Django admin configurations for models
-│   ├── apps.py
-│   ├── models.py                # Blog and Category models
-│   ├── tests.py
-│   ├── urls.py                  # App URL patterns (home, post detail, category, register)
-│   └── views.py                 # Views handling requests and rendering templates
-├── static/                   # Static files (CSS, JS, images)
-│   │   └── style.css             # Custom CSS including responsive navbar and footer styles
-├── db.sqlite3                   # Default SQLite database (after migrations)
-├── manage.py                    # Django project management script
-└── README.md                    # This documentation file
+├── blog_project/                  # Main Django project folder  
+│   ├── __init__.py  
+│   ├── asgi.py  
+│   ├── settings.py                # Project settings including INSTALLED_APPS, TEMPLATES, DATABASES  
+│   ├── urls.py                   # Root URL configurations including blog app URLs  
+│   └── wsgi.py  
+│  
+├── blog/                         # Django app for blog functionality  
+│   ├── templates/                # HTML templates  
+│   │   └── blog/  
+│   │       ├── home.html         # Homepage listing posts and categories  
+│   │       ├── post_detail.html  # Individual blog post detail  
+│   ├── __init__.py  
+│   ├── admin.py                  # Django admin configurations for models  
+│   ├── apps.py  
+│   ├── models.py                # Blog and Category models  
+│   ├── tests.py  
+│   ├── urls.py                  # App URL patterns (home, post detail, category, register)  
+│   └── views.py                 # Views handling requests and rendering templates  
+├── static/                   # Static files (CSS, JS, images)  
+│   │   └── style.css             # Custom CSS including responsive navbar and footer styles  
+├── db.sqlite3                   # Default SQLite database (after migrations)  
+├── manage.py                    # Django project management script  
+└── README.md                    # This documentation file  
 
 ## 📸 Screenshots
 
