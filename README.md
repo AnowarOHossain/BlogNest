@@ -98,7 +98,7 @@ Here are some previews of BlogNest in action:
 
 ![Post Detail Screenshot](Screenshots/screenshot3.png)
 
-### 🔐 Login Page
+### 🔐 Footer Section
 
 ![Footer Section Screenshot](Screenshots/screenshot2.png)
 
