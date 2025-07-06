@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }} | BlogNest</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>BlogNest</h1>
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="/admin/blog/post/add/" target="_blank">Write</a>
+            <a href="#">Categories</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="post-detail">
+            <h1>{{ post.title }}</h1>
+            <p class="meta">By {{ post.author }} on {{ post.created_at|date:"F j, Y" }}</p>
+            <div class="content">
+                {{ post.content|linebreaks }}
+            </div>
+            <a href="{% url 'home' %}" class="back-link">← Back to BlogNest</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; {{ now|date:"Y" }} BlogNest — Built with Django
+    </footer>
+
+</body>
+</html>

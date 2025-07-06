@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlogNest</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>BlogNest</h1>
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="/admin/blog/post/add/" target="_blank">Write</a>
+            <a href="#">Categories</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="title">Welcome to BlogNest</h2>
+
+        {% for post in posts %}
+            <div class="post-preview">
+                <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+                <p class="meta">By {{ post.author }} on {{ post.created_at|date:"F j, Y" }}</p>
+                <p>{{ post.content|truncatechars:200 }}</p>
+                <a href="{% url 'post_detail' post.slug %}">Read more →</a>
+            </div>
+        {% empty %}
+            <p>No blog posts found.</p>
+        {% endfor %}
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="title">About</h2>
+            <p>
+                BlogNest is a simple blogging platform built with Django.  
+                It's a space for sharing ideas, learning to code, and expressing your voice with simplicity.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="title">Contact</h2>
+            <p>
+                Have questions or feedback?  
+                👉 <a href="https://msganowar.netlify.app/" target="_blank">Message Me Here</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; {{ now|date:"Y" }} BlogNest - 2025
+    </footer>
+
+</body>
+</html>
