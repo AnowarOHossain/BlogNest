@@ -54,10 +54,6 @@ A simple, clean, and responsive Django blog platform featuring categories, user 
    * **Homepage:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
    * **Admin login:** [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
-## Note for Students and Learners
-
-This project is free to clone, fork, and use for learning and educational purposes. Feel free to explore, modify, and enhance it as part of your development journey.
-
 ## Project Folder Structure
 
 BlogNest/
@@ -119,6 +115,9 @@ Created by **Anowar Hossain**
 GitHub: [Anowar Hossain](https://github.com/AnowarOHossain)  
 To Message me: [Click Here](https://msganowar.netlify.app/)
 
+## Note for Students and Learners  
+
+This project is free to clone, fork, and use for learning and educational purposes. Feel free to explore, modify, and enhance it as part of your development journey.  
 
 ## License
 
